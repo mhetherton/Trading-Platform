@@ -21,8 +21,9 @@ public class Order {
         ACTIVE, FILLED
     }
 
+    // Tells DB to auto-increment this column
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Tells DB to auto-increment this column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderId; // Changed from String to Long
 
     @Enumerated(EnumType.STRING)

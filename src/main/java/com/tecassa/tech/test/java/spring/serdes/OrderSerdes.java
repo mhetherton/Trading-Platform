@@ -43,7 +43,6 @@ public class OrderSerdes implements Serdes<Order> {
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 DataOutputStream dos = new DataOutputStream(baos)) {
 
-            // dos.writeLong(object.getOrderId());
             dos.writeLong(object.getVolume());
             // Convert BigDecimal to string and write it UTF-encoded
             dos.writeUTF(object.getPrice().toString());
@@ -65,10 +64,8 @@ public class OrderSerdes implements Serdes<Order> {
                 DataInputStream dis = new DataInputStream(bais)) {
 
             Order order = new Order();
-            // order.setOrderId(dis.readLong());
             order.setVolume(dis.readLong());
             order.setPrice(new BigDecimal(dis.readUTF()));
-
             String sideStr = dis.readUTF();
             order.setSide(sideStr.isEmpty() ? null : Order.Side.valueOf(sideStr));
 

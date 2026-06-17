@@ -30,8 +30,8 @@ public class OrderMatcher {
                 incomingOrder.getSide(), incomingOrder.getPrice(), incomingOrder.getVolume());
 
         // 2. IMPORTANT: Save it FIRST as ACTIVE to generate the database ID
-        // immediately.
-        // This ensures savedIncoming.getOrderId() is NOT null inside the loop.
+        // immediately. This ensures savedIncoming.getOrderId() is NOT null inside the
+        // loop.
         incomingOrder.setStatus(OrderStatus.ACTIVE);
         Order savedIncoming = orderRepository.save(incomingOrder);
 
