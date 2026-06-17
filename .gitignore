@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+# Ignore target directories in any microservice folder
+**/target/
+
+# Ignore VS Code configuration folder
+**/.vscode/
+
 # Log file
 *.log
 
