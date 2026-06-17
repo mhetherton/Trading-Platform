@@ -1,9 +1,9 @@
-package com.tecassa.tech.test.java.spring.matching;
+package com.trading.tech.matching;
 
-import com.tecassa.tech.test.java.spring.domain.Order;
-import com.tecassa.tech.test.java.spring.domain.Trade;
-import com.tecassa.tech.test.java.spring.domain.Order.*;
-import com.tecassa.tech.test.java.spring.repository.OrderRepository;
+import com.trading.tech.domain.Order;
+import com.trading.tech.domain.Trade;
+import com.trading.tech.domain.Order.*;
+import com.trading.tech.repository.OrderRepository;
 import org.junit.jupiter.api.*;
 import org.mockito.ArgumentCaptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +18,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-/**
- * Fill out some tests to show how you would go about it.
- * No need to overdo the number of tests but feel free to
- * list out some tests you would continue to write if you had
- * more time and wanted to fully surround the test cases.
- */
 @SpringBootTest
 @Transactional
 class OrderMatcherTest {

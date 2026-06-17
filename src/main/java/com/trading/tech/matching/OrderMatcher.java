@@ -1,10 +1,10 @@
-package com.tecassa.tech.test.java.spring.matching;
+package com.trading.tech.matching;
 
-import com.tecassa.tech.test.java.spring.domain.Order;
-import com.tecassa.tech.test.java.spring.domain.Trade;
-import com.tecassa.tech.test.java.spring.domain.Order.OrderStatus;
-import com.tecassa.tech.test.java.spring.domain.Order.Side;
-import com.tecassa.tech.test.java.spring.repository.OrderRepository;
+import com.trading.tech.domain.Order;
+import com.trading.tech.domain.Trade;
+import com.trading.tech.domain.Order.OrderStatus;
+import com.trading.tech.domain.Order.Side;
+import com.trading.tech.repository.OrderRepository;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

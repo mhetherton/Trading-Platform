@@ -1,7 +1,7 @@
-package com.tecassa.tech.test.java.spring.matching;
+package com.trading.tech.matching;
 
-import com.tecassa.tech.test.java.spring.domain.Trade;
-import com.tecassa.tech.test.java.spring.repository.TradeRepository; // Import your repository
+import com.trading.tech.domain.Trade;
+import com.trading.tech.repository.TradeRepository; // Import your repository
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

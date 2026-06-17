@@ -1,7 +1,7 @@
-package com.tecassa.tech.test.java.spring.api;
+package com.trading.tech.api;
 
-import com.tecassa.tech.test.java.spring.domain.Order;
-import com.tecassa.tech.test.java.spring.messaging.BinaryMessageQueue;
+import com.trading.tech.domain.Order;
+import com.trading.tech.messaging.BinaryMessageQueue;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,6 +1,6 @@
-package com.tecassa.tech.test.java.spring.serdes;
+package com.trading.tech.serdes;
 
-import com.tecassa.tech.test.java.spring.domain.Order;
+import com.trading.tech.domain.Order;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,9 +14,6 @@ import java.math.BigDecimal;
 import org.springframework.stereotype.Component;
 
 /**
- * TODO - Fill in this serialiser/deserialiser with an implementation
- * of your choosing and explain your decision.
- * 
  * I'm using ByteArray Stream and Data Stream for the following reasons:
  * 1. No Manual Byte Counting: Using Data Stream and Data Stream
  * completely removes the need to track array positions or specify maximum

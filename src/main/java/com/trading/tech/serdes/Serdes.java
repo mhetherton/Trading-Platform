@@ -1,4 +1,4 @@
-package com.tecassa.tech.test.java.spring.serdes;
+package com.trading.tech.serdes;
 
 public interface Serdes<T> {
 

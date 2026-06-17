@@ -1,6 +1,6 @@
-package com.tecassa.tech.test.java.spring.repository;
+package com.trading.tech.repository;
 
-import com.tecassa.tech.test.java.spring.domain.Trade;
+import com.trading.tech.domain.Trade;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

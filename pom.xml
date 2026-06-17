@@ -7,6 +7,7 @@
     <artifactId>tech-test-java-spring2</artifactId>
     <version>1.0.14-SNAPSHOT</version>
     <packaging>jar</packaging>
+    
 
     <properties>
         <java.version>25</java.version>

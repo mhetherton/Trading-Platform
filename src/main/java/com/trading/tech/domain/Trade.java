@@ -1,4 +1,4 @@
-package com.tecassa.tech.test.java.spring.domain;
+package com.trading.tech.domain;
 
 import jakarta.persistence.*;
 import lombok.*;

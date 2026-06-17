@@ -1,8 +1,8 @@
-package com.tecassa.tech.test.java.spring.messaging;
+package com.trading.tech.messaging;
 
-import com.tecassa.tech.test.java.spring.domain.Order;
-import com.tecassa.tech.test.java.spring.matching.OrderMatcher;
-import com.tecassa.tech.test.java.spring.serdes.Serdes;
+import com.trading.tech.domain.Order;
+import com.trading.tech.matching.OrderMatcher;
+import com.trading.tech.serdes.Serdes;
 import org.springframework.stereotype.Component;
 
 /**
@@ -20,8 +20,8 @@ public class BinaryMessageQueue {
         this.orderMatcher = orderMatcher;
     }
 
-    public void publish(Order order){
-        //This is just to simulate serialisation over some ipc or message barrier
+    public void publish(Order order) {
+        // This is just to simulate serialisation over some ipc or message barrier
         byte[] bytes = serdes.serialise(order);
         Order rehydrated = serdes.deserialise(bytes);
         orderMatcher.newOrder(rehydrated);
